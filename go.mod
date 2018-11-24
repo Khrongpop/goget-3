@@ -1,4 +1,4 @@
-module github.com/khrongpop/goget#3
+gitmodule github.com/khrongpop/goget#3
 
 require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect

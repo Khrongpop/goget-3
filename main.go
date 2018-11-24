@@ -36,7 +36,7 @@ func main() {
 	mongoHost := viper.GetString("mongo.host")
 	mongoUser := viper.GetString("mongo.user")
 	mongoPass := viper.GetString("mongo.pass")
-	// port := ":" + viper.GetString("port")
+	port := ":" + viper.GetString("port")
 
 	// mongoHost := "13.250.119.252"
 	// mongoUser := "root"
