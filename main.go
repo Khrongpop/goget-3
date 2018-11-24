@@ -26,25 +26,12 @@ func main() {
 
 	e := echo.New()
 
-	// yml
-	// mongo:
-
-	// env
-	// MONGO_HOST
 	viper.AutomaticEnv()
 	viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
 	mongoHost := viper.GetString("mongo.host")
 	mongoUser := viper.GetString("mongo.user")
 	mongoPass := viper.GetString("mongo.pass")
-	// port := ":" + viper.GetString("port")
 
-	// mongoHost := "13.250.119.252"
-	// mongoUser := "root"
-	// mongoPass := "example"
-	// port := ":1323"
-
-	// fmt.Println(mongoHost, mongoUser, mongoPass)
-	// session, err := mgo.Dial("root:example@13.250.119.252:27017"
 	connString := fmt.Sprintf("%v:%v@%v", mongoUser, mongoPass, mongoHost)
 	session, err := mgo.Dial(connString)
 	if err != nil {
