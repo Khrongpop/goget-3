@@ -51,7 +51,7 @@ func main() {
 	e.POST("/todo", h.create)
 	e.PUT("/todo/:id", h.done)
 	e.DELETE("/todo/:id", h.delete)
-	e.Logger.Fatal(e.Start(":1323"))
+	e.Logger.Fatal(e.Start(port))
 }
 
 func (h *handler) create(c echo.Context) error {
