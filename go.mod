@@ -1,5 +1,3 @@
-gitmodule github.com/khrongpop/goget#3
-
 require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
 	github.com/labstack/echo v3.3.5+incompatible
@@ -12,3 +10,5 @@ require (
 	golang.org/x/crypto v0.0.0-20181112202954-3d3f9f413869 // indirect
 	gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
 )
+
+module github.com/khrongpop/goget#3
