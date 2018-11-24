@@ -43,7 +43,7 @@ func main() {
 	// mongoPass := "example"
 	// port := ":1323"
 
-	fmt.Println(mongoHost, mongoUser, mongoPass)
+	// fmt.Println(mongoHost, mongoUser, mongoPass)
 	// session, err := mgo.Dial("root:example@13.250.119.252:27017"
 	connString := fmt.Sprintf("%v:%v@%v", mongoUser, mongoPass, mongoHost)
 	session, err := mgo.Dial(connString)
