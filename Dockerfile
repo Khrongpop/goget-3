@@ -1,6 +1,6 @@
 FROM golang:1.11 AS build-env
 
-ENV GO111MODLUE=on
+ENV GO111MODULE=on
 ADD . /src
 RUN cd /src && GOOS=linux GOARCH=386 go build ~o goapp
 
