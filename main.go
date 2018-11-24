@@ -33,6 +33,7 @@ func main() {
 	mongoPass := viper.GetString("mongo.pass")
 	port := ":" + viper.GetString("port")
 
+	fmt.Println(port)
 	connString := fmt.Sprintf("%v:%v@%v", mongoUser, mongoPass, mongoHost)
 	session, err := mgo.Dial(connString)
 	if err != nil {
